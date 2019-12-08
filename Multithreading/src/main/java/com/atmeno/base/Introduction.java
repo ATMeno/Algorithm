@@ -32,6 +32,27 @@ public class Introduction {
      *  活锁  解决方案：尝试等待一个随机时间 例：raft分布式一致性算法
      *  饥饿  解决方案：使用公平锁，即先到先得
      *
+     *  乐观锁
+     *  悲观锁
+     *
+     *  公平锁
+     *  非公平锁
+     *
+     *  可重入锁
+     *  非可重入锁
+     *
+     *  独占
+     *  共享
+     *
+     *
      *  六.无锁算法与数据结构
+     *
+     *
+     *
+     *
+     *  JUC编程Tools
+     *  包含5个工具类：Executors   Semaphore   Exchange    CyclicBarrier   CountDownLatch
+     *  1.Executors 不建议使用   Executors 提供的很多方法默认使用的都是无界的 LinkedBlockingQueue，高负载情境下，无界队列很容易导致 OOM
+     *   ThreadPoolExecutor
      */
 }
