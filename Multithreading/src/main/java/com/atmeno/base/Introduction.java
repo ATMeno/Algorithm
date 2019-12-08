@@ -54,5 +54,21 @@ public class Introduction {
      *  包含5个工具类：Executors   Semaphore   Exchange    CyclicBarrier   CountDownLatch
      *  1.Executors 不建议使用   Executors 提供的很多方法默认使用的都是无界的 LinkedBlockingQueue，高负载情境下，无界队列很容易导致 OOM
      *   ThreadPoolExecutor
+     *
+     *   ThreadPoolExecutor(
+         int corePoolSize,                  //线程池保有的最小线程数
+         int maximumPoolSize,               //线程池创建的最大线程数
+         long keepAliveTime,                //如果一个线程空闲了keepAliveTime & unit这么久，而且线程池的线程数大于 corePoolSize ，那么这个空闲的线程就要被回收了
+         TimeUnit unit,
+         BlockingQueue<Runnable> workQueue, //工作队列
+         ThreadFactory threadFactory,       //自定义如何创建线程,，例如你可以给线程指定一个有意义的名字
+         RejectedExecutionHandler handler)  //自定义任务的拒绝策略
+                                            //ThreadPoolExecutor 已经提供了以下 4 种策略。
+                                            //CallerRunsPolicy：提交任务的线程自己去执行该任务。
+                                            //AbortPolicy：默认的拒绝策略，会 throws RejectedExecutionException。
+                                            //DiscardPolicy：直接丢弃任务，没有任何异常抛出。
+                                            //DiscardOldestPolicy：丢弃最老的任务，其实就是把最早进入工作队列的任务丢弃，然后把新任务加入到工作队列。
+                                            //Java 在 1.6 版本还增加了 allowCoreThreadTimeOut(boolean value) 方法，它可以让所有线程都支持超时，这意味着如果项目很闲，就会将项目组的成员都撤走。
      */
+
 }
