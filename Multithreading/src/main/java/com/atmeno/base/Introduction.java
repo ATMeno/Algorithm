@@ -52,9 +52,11 @@ public class Introduction {
      *
      *  JUC编程Tools
      *  包含5个工具类：Executors   Semaphore   Exchange    CyclicBarrier   CountDownLatch
-     *  1.Executors 不建议使用   Executors 提供的很多方法默认使用的都是无界的 LinkedBlockingQueue，高负载情境下，无界队列很容易导致 OOM
-     *   ThreadPoolExecutor
+     *  1.线程池
      *
+     *   Executors  不建议使用   Executors 提供的很多方法默认使用的都是无界的 LinkedBlockingQueue，高负载情境下，无界队列很容易导致 OOM
+     *
+     *   推荐：
      *   ThreadPoolExecutor(
          int corePoolSize,                  //线程池保有的最小线程数
          int maximumPoolSize,               //线程池创建的最大线程数
