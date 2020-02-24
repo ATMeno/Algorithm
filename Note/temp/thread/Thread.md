@@ -4,31 +4,19 @@
 
 ### 1.生命周期
 
-#### 通用：
+#### 通用线程生命周期：
 
-​	初始状态
+​	![通用的线程生命周期](G:\Ameno\Project\java\github\Base\Note\temp\thread\pic\通用的线程生命周期.png)
 
-​	可运行状态
 
-​					休眠状态
 
-​	运行状态
+#### java线程生命周期：
 
-​	终止状态​	
+![java的线程生命周期](G:\Ameno\Project\java\github\Base\Note\temp\thread\pic\java的线程生命周期.png)
 
-#### java线程模型：
+#### 	java线程状态：
 
-​	初始状态
-
-​	运行状态		休眠状态
-
-​	终止状态
-
-休眠状态：Blocked
-
-无限期等待：Waiting
-
-有限期等待：Time_Waiting
+![java线程状态](G:\Ameno\Project\java\github\Base\Note\temp\thread\pic\java线程状态.png)
 
 
 
@@ -73,5 +61,3 @@ CAS原子指令：读值-比较-写入/什么都不做
 ​	问题：ABA问题，饥饿，活锁
 
 ​	解决方案：版本号 AtomicStampedReference，bool标志 AtomicMarkableReference
-
-​			 

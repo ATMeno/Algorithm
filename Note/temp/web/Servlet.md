@@ -4,7 +4,9 @@
 
 web启动流程：tomcat启动 ----》加载web应用 ----》 读web.xml的<context-param/>和 <listener/>标签 ----》 创建ServletContext对象  ----》创建
 
-ps:https://www.jianshu.com/p/612c3a6673b2		Listener、Filter、Servlet执行顺序
+Listener、Filter、Servlet执行顺序
+
+![Listener、Filter、Servlet执行顺序](G:\Ameno\Project\java\github\Base\Note\temp\web\servlet\pic\Listener、Filter、Servlet执行顺序.png)
 
 ## 一.Servlet
 
