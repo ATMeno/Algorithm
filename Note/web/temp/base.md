@@ -1,4 +1,3 @@
-
 # Servlet
 
 - Servlet三大组件：Servlet,Listener,Filter
@@ -57,13 +56,12 @@ ps:https://www.jianshu.com/p/612c3a6673b2		Listener、Filter、Servlet执行顺�
 
   *​         2）session.setMaxInactiveInterval（秒数) 设置服务器回收session的时间*
 
-  *​                         全局设置：*
-
-  ​                                <session-config>
-
-  ​                                      <session-timeout>分种数</session-timeout>
-
-  ​                                 <session-config>
+  ```xml
+  <!-- 全局设置 -->
+  <session-config>
+  	<session-timeout>分钟数</session-timeout>
+  <session-config>
+  ```
 
   *​         3）session.invalidate() : 手动销毁session对象*
 
