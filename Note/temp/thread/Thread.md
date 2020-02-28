@@ -6,17 +6,17 @@
 
 #### 通用线程生命周期：
 
-​	![通用的线程生命周期](G:\Ameno\Project\java\github\Base\Note\temp\thread\pic\通用的线程生命周期.png)
+​	![通用的线程生命周期](pic/通用的线程生命周期.png)
 
 
 
 #### java线程生命周期：
 
-![java的线程生命周期](G:\Ameno\Project\java\github\Base\Note\temp\thread\pic\java的线程生命周期.png)
+![java的线程生命周期](pic/java的线程生命周期.png)
 
-#### 	java线程状态：
+#### java线程状态：
 
-![java线程状态](G:\Ameno\Project\java\github\Base\Note\temp\thread\pic\java线程状态.png)
+![java线程状态](pic/java线程状态.png)
 
 
 
@@ -34,7 +34,7 @@ I/O密集型：核数*(1+I/O耗时/CPU耗时)
 
 ### 3.锁
 
-系统级锁需要进行内核态到用户态切换，切换主要耗时在：
+**系统级锁**需要进行内核态到用户态切换，切换主要耗时在：
 
 1. 保存/恢复线程
 2. 检查
@@ -42,7 +42,15 @@ I/O密集型：核数*(1+I/O耗时/CPU耗时)
 
 引用：https://blog.csdn.net/JH_Zhai/article/details/79861169
 
-二.线程池
+1.锁的分类
+
+资料：https://www.jianshu.com/p/68587af2264b
+
+![锁的种类](pic/锁的种类.png)
+
+## 二.线程池
+
+
 
 2.线程互斥
 
