@@ -6,9 +6,27 @@ web启动流程：tomcat启动 ----》加载web应用 ----》 读web.xml的<cont
 
 Listener、Filter、Servlet执行顺序
 
-![Listener、Filter、Servlet执行顺序](G:\Ameno\Project\java\github\Base\Note\temp\web\servlet\pic\Listener、Filter、Servlet执行顺序.png)
+![Listener、Filter、Servlet执行顺序](pic/Listener、Filter、Servlet执行顺序.png)
 
 ## 一.Servlet
+
+1.ServletContext
+
+
+
+```xml
+<!-- 全局参数配置 -->
+<context-param>
+    <param-name>AAA</param-name>
+    <param-value>AAA'value</param-value>
+</context-param>
+<context-param>
+    <param-name>BBB</param-name>
+    <param-value>BBB'value</param-value>
+</context-param>
+```
+
+
 
 ## 二.Listener  (六个三对监听器)
 
@@ -22,7 +40,7 @@ Listener、Filter、Servlet执行顺序
 
   *销毁： 关闭服务器或者重新部署web项目*
 
-  -  **属性增加，修改，删除**	**ServletContextAttirbuteListener**
+  - **属性增加，修改，删除**	**ServletContextAttirbuteListener**
 
   *增加:  setAttribute("name",Object)*
 
