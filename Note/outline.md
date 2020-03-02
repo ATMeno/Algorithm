@@ -1,6 +1,6 @@
 ## 基础
 
-git maven jenkins linux
+git maven jenkins linux java8新特性
 
 性能调优专题 ---> 并发编程专题 ---> 分布式专题 ---> 源码框架专题 ---> 微服务专题 ---> 项目实战
 
