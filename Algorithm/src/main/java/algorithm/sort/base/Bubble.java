@@ -5,7 +5,9 @@ import algorithm.util.Tool;
 import java.util.Arrays;
 
 /**
- * @Description 冒泡排序:从第一个比较到最后一个，每次将最大的数移动到最后
+ * @Description 冒泡排序
+ * 比较相邻的两个，把最大的移动到最后
+ * 从第一个比较到最后一个，每次将最大的数移动到最后
  * @Author maoty
  * @Date 2019-12-23 14:43
  */

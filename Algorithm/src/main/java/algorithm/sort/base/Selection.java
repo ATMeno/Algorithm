@@ -5,8 +5,10 @@ import algorithm.util.Tool;
 import java.util.Arrays;
 
 /**
- * @Description 选择排序:从未排序区间中找到最小的元素，将其放到已排序区间的末尾
- *                      破坏了相对位置，是不稳定的
+ * @Description 选择排序
+ * 分为已排序区间和未排序区间
+ * 从未排序区间中找到最小的，与未排序的第一个进行交换
+ * 破坏了相对位置，是不稳定的
  * @Author maoty
  * @Date 2019-12-24 8:50
  */

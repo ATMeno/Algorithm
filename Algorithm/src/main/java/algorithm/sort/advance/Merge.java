@@ -1,7 +1,4 @@
-package algorithm.sort.division;
-
-import algorithm.sort.base.Selection;
-import algorithm.util.Tool;
+package algorithm.sort.advance;
 
 import java.util.Arrays;
 
@@ -21,9 +18,17 @@ public class Merge {
         bubble.sort(data);
     }
 
-    public Comparable[] sort(Comparable[] data) {
-        if (data != null && data.length < 2) return data;
-        return  null;
+    public void sort(Comparable[] data) {
+        if (data != null && data.length < 2) return;
+        div(data,0,data.length -1);
+    }
+
+    private void div(Comparable[] data, int first, int last) {
+        if(first == last) return;
+
+        div(data,first,first + (last -first << 2));
+        div(data,first + (last - first << 2) + 1, last);
+
     }
 
     /**
@@ -31,7 +36,7 @@ public class Merge {
      * @param data2 有序数组2
      * @return 数组1和数组2合并后的有序数组
      */
-    private Comparable[] mergeSort(Comparable[] data1, Comparable[] data2) {
+    private Comparable[] merge(Comparable[] data1, Comparable[] data2) {
         int index1 = 0;
         int index2 = 0;
         Comparable[] temp = new Comparable[data1.length + data2.length];

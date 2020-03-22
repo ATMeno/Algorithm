@@ -3,7 +3,8 @@ package algorithm.sort.base;
 import java.util.Arrays;
 
 /**
- * @Description 希尔排序:
+ * @Description 希尔排序:插入排序的改进版
+ *              按照一个增量分段
  * @Author maoty
  * @Date 2019-12-24 9:47
  */
