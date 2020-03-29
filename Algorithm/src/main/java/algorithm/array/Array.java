@@ -2,6 +2,13 @@ package algorithm.array;
 
 /**
  * 数组
+ *
+ * 注意：
+ * 数组越界
+ *
+ *
+ * 常用方法：
+ * 1.
  */
 public class Array {
     private int size;
